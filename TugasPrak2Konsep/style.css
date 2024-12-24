@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb6c1; /* Pink soft */
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    margin-left: 145px;
+}
+
+.btn-search {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb6c1; /* Pink soft */
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover, .btn-search:hover {
+    background-color: #ff91a4; /* Lebih gelap saat di-hover */
+}
+
+/* Search form styling */
+.search-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb6c1; /* Pink soft */
+    color: black;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #ff91a4;
+}
+
+/* Table styling */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Tentukan lebar tetap untuk tabel */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Tentukan lebar kolom untuk setiap header */
+th:nth-child(1), td:nth-child(1) { /* Kolom ID */
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2) { /* Kolom Nama */
+    width: 25%;
+}
+
+th:nth-child(3), td:nth-child(3) { /* Kolom Email */
+    width: 30%;
+}
+
+th:nth-child(4), td:nth-child(4) { /* Kolom Telepon */
+    width: 15%;
+}
+
+th:nth-child(5), td:nth-child(5) { /* Kolom Aksi */
+    width: 20%; /* Lebar kolom Aksi diperbesar */
+}
+
+/* Tambahkan padding agar setiap kotak terlihat lebih jelas */
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+th {
+    background-color: #ffb6c1; /* Pink soft */
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe4e9; /* Pink soft ringan */
+}
+
+tr:hover {
+    background-color: #ffccd5;
+}
+
+/* Button edit and delete styling */
+.btn-edit, .btn-delete {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.btn-edit {
+    background-color: #ffa500; /* Pink yang lebih gelap */
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #ff6666;
+}
+
+.btn-delete {
+    background-color: #f44336; /* Pink yang lebih gelap untuk delete */
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #ff3333;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #ffe4e9; /* Pink soft ringan */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.page-link.active {
+    background-color: #ffb6c1; /* Pink soft */
+    color: white;
+    font-weight: bold;
+}
+
+.page-link:hover {
+    background-color: #ff91a4;
+    color: white;
+}
